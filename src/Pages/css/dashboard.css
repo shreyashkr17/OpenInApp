@@ -1,0 +1,188 @@
+.dashboard{
+    display: flex;
+    background: #F8FAFF;
+    height: 100vh;
+    /* position: absolute; */
+}
+.leftDashboard{
+    width: 25%;
+    height: 100%;
+    /* position: relative; */
+    /* background: #1E1E1E; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hamDisp{
+    display: none;
+}
+.innerMenuDash{
+    width: 80%;
+    height: 93%;
+    background: linear-gradient(180deg, #4285F4 0%, #3C83F9 100%);
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.menuTitle{
+    width: 100%;
+    margin: auto;
+}
+.menuTitle h1{
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+.menuRecords{
+    width: 100%;
+    height: 45%;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.listMenu{
+    width: 80%;
+    display: flex;
+    height: 16%;
+    /* background-color: white; */
+    margin: auto;
+}
+.svgLi{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    /* background-color: salmon; */
+}
+.svgLi svg{
+    margin: auto;
+}
+.ListTitle{
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ListTitle h3{
+    /* margin: auto; */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+.menuRecords1{
+    width: 100%;
+    height: 17%;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.listMenu1{
+    width: 66%;
+    display: flex;
+    height: 16%;
+    /* background-color: white; */
+    margin: auto;
+    font-weight:400 ;
+}
+.ListTitle1 h3{
+    /* margin: auto; */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight:400 ;
+}
+.menuLeft{
+    display: none;
+}
+
+@media (max-width:1100px) {
+    .innerMenuDash{
+        display: none;
+    }
+    .leftDashboard{
+        width: auto;
+        height: 100%;
+    }
+    .menuLeft{
+        display: block;
+        width: 100px;
+        height: 50px;
+        /* background-color: red; */
+        margin-bottom: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .svgMenu{
+        margin: auto;
+        cursor: pointer;
+    }
+}
+@media (max-width:768px) {
+    .leftDashboard{
+        width: 50px;
+        height: 100%;
+    }
+    .menuLeft{
+        width: auto;
+    }
+}
+
+
+
+
+
+
+/* Right SIde of The Dashboard */
+.rightDashboard{
+    width: 72%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+    z-index: 1;
+    margin: auto;
+    overflow: hidden;
+}
+
+@media (max-width:1100px) {
+    .rightDashboard{
+        width: 90%;
+        margin:0 ;
+    }
+    .dashboard{
+        height: 110vh;
+    }
+}
+@media (max-width:850px) {
+    .dashboard{
+        height: 140vh;
+    }
+    .rightDashboard{
+        width: 90%;
+        margin:0 ;
+    }
+}
+
+@media (max-width:600px) {
+    .rightDashboard{
+        margin: 0;
+    }
+    .dashboard{
+        height: 160vh;
+    }
+}
+@media (max-width:500px) {
+    .rightDashboard{
+        margin: 0;
+    }
+    .dashboard{
+        height: 195vh;
+    }
+}

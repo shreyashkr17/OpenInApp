@@ -1,0 +1,113 @@
+.DashNavbar{
+    width: 100%;
+    height: 40px;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    margin-top:2px ;
+}
+.NavbarTitle{
+    width: 55%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 15px;
+}
+.NavbarTitle h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.NavbarSearch{
+    width: 30%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+}
+.inputField{
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    border-radius:20px ;
+}
+.inputSearch{
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.svgCont{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.svgCont svg{
+    margin: auto;
+    /* color:white ; */
+    cursor: pointer;
+}
+.notification{
+    width: 5%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+}
+.notification svg{
+    margin: auto;
+    /* color: ; */
+}
+.user{
+    width: 7%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+}
+.signinUser{
+    /* margin: auto; */
+    border-radius:50% ;
+}
+
+
+@media (max-width:600px) {
+    .NavbarTitle{
+        width: 40%;
+        /* background-color: orange; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 15px;
+    }
+    .NavbarTitle h1{
+        font-size: 22px;
+    }
+    .NavbarSearch{
+        width: 35%;
+    }
+    .notification{
+        width: 10%;
+        /* background-color: pink; */
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width:600px) {
+    .NavbarTitle h1{
+        font-size: 18px;
+    }
+    .NavbarTitle{
+        width: 30%;
+    }
+    .NavbarSearch{
+        width: 40%;
+    }
+    .notification{
+        width: 15%;
+    }
+}
